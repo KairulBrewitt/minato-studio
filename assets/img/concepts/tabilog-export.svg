@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 660" width="320" height="660" role="img" aria-label="TabiLog export screen with a preview of the formatted PDF trip report and CSV and Excel export options">
+  <defs>
+    <clipPath id="scr"><rect width="320" height="660" rx="20"/></clipPath>
+    <style>
+      .t { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+      .h1 { font-size: 17px; font-weight: 700; fill: #1f2430; }
+      .ti { font-size: 12px; font-weight: 600; fill: #1f2430; }
+      .mu { font-size: 9.5px; font-weight: 500; fill: #6b7280; }
+      .lb { font-size: 9.5px; font-weight: 600; fill: #6b7280; letter-spacing: 0.06em; }
+    </style>
+  </defs>
+
+  <g clip-path="url(#scr)">
+    <rect width="320" height="660" fill="#f4f5f7"/>
+
+    <text class="t" x="18" y="20" font-size="10" font-weight="700" fill="#1f2430">9:41</text>
+    <g fill="#1f2430">
+      <rect x="262" y="12" width="3" height="7" rx="1"/><rect x="267" y="10" width="3" height="9" rx="1"/><rect x="272" y="8" width="3" height="11" rx="1"/>
+      <rect x="284" y="9" width="17" height="9" rx="2.5" fill="none" stroke="#1f2430" stroke-width="1.2"/><rect x="286" y="11" width="11" height="5" rx="1"/>
+    </g>
+
+    <rect x="0" y="30" width="320" height="52" fill="#ffffff"/>
+    <rect x="0" y="81.5" width="320" height="1" fill="#e2e4e9"/>
+    <path d="M28 56 l8-8 m-8 8 l8 8 m-8-8 h18" stroke="#1f2430" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text class="t h1" x="60" y="61">Export</text>
+
+    <text class="t lb" x="32" y="108">PREVIEW · PDF REPORT</text>
+
+    <!-- paper -->
+    <rect x="52" y="120" width="216" height="290" rx="6" fill="#ffffff" stroke="#e2e4e9"/>
+    <rect x="52" y="120" width="216" height="46" rx="6" fill="#2f6fed"/>
+    <rect x="52" y="156" width="216" height="10" fill="#2f6fed"/>
+    <text class="t" x="68" y="141" font-size="12" font-weight="700" fill="#ffffff">Japan 2026 · Aydin</text>
+    <text class="t" x="68" y="155" font-size="8" font-weight="500" fill="#c9dbff">1 – 21 September · TabiLog</text>
+
+    <!-- summary numbers -->
+    <text class="t" x="68" y="188" font-size="8" font-weight="600" fill="#6b7280">BALANCE</text>
+    <text class="t" x="68" y="204" font-size="14" font-weight="800" fill="#1f2430">¥11,400</text>
+    <text class="t" x="160" y="188" font-size="8" font-weight="600" fill="#6b7280">SPENT</text>
+    <text class="t" x="160" y="204" font-size="14" font-weight="800" fill="#1f2430">¥18,600</text>
+
+    <!-- mini progress -->
+    <rect x="68" y="214" width="184" height="6" rx="3" fill="#e9ebef"/>
+    <rect x="68" y="214" width="114" height="6" rx="3" fill="#2fa86a"/>
+    <text class="t" x="68" y="232" font-size="7.5" font-weight="500" fill="#6b7280">62% of ¥30,000 monthly limit</text>
+
+    <!-- mini donut -->
+    <g transform="translate(102,272)">
+      <circle r="26" fill="none" stroke="#e9ebef" stroke-width="11"/>
+      <circle r="26" fill="none" stroke="#2f6fed" stroke-width="11" stroke-dasharray="57 107" transform="rotate(-90)"/>
+      <circle r="26" fill="none" stroke="#2fa86a" stroke-width="11" stroke-dasharray="41 123" transform="rotate(35)"/>
+      <circle r="26" fill="none" stroke="#d99b1a" stroke-width="11" stroke-dasharray="31 133" transform="rotate(124)"/>
+      <circle r="26" fill="none" stroke="#8b5cf6" stroke-width="11" stroke-dasharray="20 144" transform="rotate(192)"/>
+    </g>
+    <g class="t" font-size="7" font-weight="500" fill="#6b7280">
+      <circle cx="150" cy="255" r="3" fill="#2f6fed"/><text x="158" y="257.5">Food</text>
+      <circle cx="150" cy="269" r="3" fill="#2fa86a"/><text x="158" y="271.5">Souvenirs</text>
+      <circle cx="150" cy="283" r="3" fill="#d99b1a"/><text x="158" y="285.5">Transport</text>
+      <circle cx="150" cy="297" r="3" fill="#8b5cf6"/><text x="158" y="299.5">Attractions</text>
+    </g>
+
+    <!-- table -->
+    <rect x="68" y="316" width="184" height="14" fill="#f0f1f4"/>
+    <g class="t" font-size="6.5" font-weight="700" fill="#6b7280">
+      <text x="74" y="325.5">DATE</text><text x="106" y="325.5">DESCRIPTION</text><text x="192" y="325.5">CATEGORY</text><text x="246" y="325.5" text-anchor="end">AMOUNT</text>
+    </g>
+    <g class="t" font-size="6.5" font-weight="500" fill="#1f2430">
+      <text x="74" y="341">14 Sep</text><text x="106" y="341">Convenience store</text><text x="192" y="341">Food</text><text x="246" y="341" text-anchor="end">−¥620</text>
+      <rect x="68" y="345" width="184" height="0.7" fill="#eceef1"/>
+      <text x="74" y="357">14 Sep</text><text x="106" y="357">Souvenir shop</text><text x="192" y="357">Souvenirs</text><text x="246" y="357" text-anchor="end">−¥2,800</text>
+      <rect x="68" y="361" width="184" height="0.7" fill="#eceef1"/>
+      <text x="74" y="373">13 Sep</text><text x="106" y="373">Subway day pass</text><text x="192" y="373">Transport</text><text x="246" y="373" text-anchor="end">−¥800</text>
+      <rect x="68" y="377" width="184" height="0.7" fill="#eceef1"/>
+      <text x="74" y="389">12 Sep</text><text x="106" y="389">Top up from Kairul</text><text x="192" y="389">Top up</text><text x="246" y="389" text-anchor="end" fill="#2fa86a">+¥30,000</text>
+    </g>
+
+    <!-- format options -->
+    <text class="t lb" x="32" y="440">FORMAT</text>
+
+    <rect x="16" y="450" width="288" height="52" rx="14" fill="#ffffff" stroke="#2f6fed" stroke-width="1.6"/>
+    <rect x="30" y="464" width="26" height="26" rx="7" fill="#d64545" opacity="0.14"/>
+    <text class="t" x="43" y="481" font-size="8" font-weight="800" fill="#d64545" text-anchor="middle">PDF</text>
+    <text class="t ti" x="66" y="472">Formatted report</text>
+    <text class="t mu" x="66" y="487">Charts, balances and a styled table</text>
+    <circle cx="284" cy="476" r="8" fill="#2f6fed"/>
+    <path d="M280.5 476l2.4 2.4 4.6-4.8" stroke="#ffffff" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="16" y="510" width="288" height="52" rx="14" fill="#ffffff"/>
+    <rect x="30" y="524" width="26" height="26" rx="7" fill="#2fa86a" opacity="0.14"/>
+    <text class="t" x="43" y="541" font-size="7.5" font-weight="800" fill="#2fa86a" text-anchor="middle">XLS</text>
+    <text class="t ti" x="66" y="532">Excel workbook</text>
+    <text class="t mu" x="66" y="547">One sheet per wallet</text>
+    <circle cx="284" cy="536" r="8" fill="none" stroke="#e2e4e9" stroke-width="1.6"/>
+
+    <rect x="16" y="570" width="288" height="52" rx="14" fill="#ffffff"/>
+    <rect x="30" y="584" width="26" height="26" rx="7" fill="#6b7280" opacity="0.14"/>
+    <text class="t" x="43" y="601" font-size="7.5" font-weight="800" fill="#6b7280" text-anchor="middle">CSV</text>
+    <text class="t ti" x="66" y="592">Plain CSV</text>
+    <text class="t mu" x="66" y="607">Opens anywhere · no lock-in</text>
+    <circle cx="284" cy="596" r="8" fill="none" stroke="#e2e4e9" stroke-width="1.6"/>
+
+    <rect x="118" y="646" width="84" height="4" rx="2" fill="#1f2430" opacity="0.28"/>
+  </g>
+</svg>

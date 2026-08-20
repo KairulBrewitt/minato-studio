@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 660" width="320" height="660" role="img" aria-label="TabiLog in dark mode, showing transaction history for a wallet with running balance">
+  <defs>
+    <clipPath id="scr"><rect width="320" height="660" rx="20"/></clipPath>
+    <style>
+      .t { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+      .h1 { font-size: 17px; font-weight: 700; fill: #e8e9ec; }
+      .ti { font-size: 12px; font-weight: 600; fill: #e8e9ec; }
+      .mu { font-size: 9.5px; font-weight: 500; fill: #9aa0ac; }
+      .amt { font-size: 12.5px; font-weight: 700; }
+    </style>
+  </defs>
+
+  <g clip-path="url(#scr)">
+    <rect width="320" height="660" fill="#15181f"/>
+
+    <text class="t" x="18" y="20" font-size="10" font-weight="700" fill="#e8e9ec">9:41</text>
+    <g fill="#e8e9ec">
+      <rect x="262" y="12" width="3" height="7" rx="1"/><rect x="267" y="10" width="3" height="9" rx="1"/><rect x="272" y="8" width="3" height="11" rx="1"/>
+      <rect x="284" y="9" width="17" height="9" rx="2.5" fill="none" stroke="#e8e9ec" stroke-width="1.2"/><rect x="286" y="11" width="11" height="5" rx="1"/>
+    </g>
+
+    <!-- header -->
+    <rect x="0" y="30" width="320" height="52" fill="#1e2129"/>
+    <rect x="0" y="81.5" width="320" height="1" fill="#343846"/>
+    <path d="M28 56 l8-8 m-8 8 l8 8 m-8-8 h18" stroke="#e8e9ec" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text class="t h1" x="60" y="61">History</text>
+    <circle cx="291" cy="56" r="13" fill="#262a33"/>
+    <path d="M291 50a6 6 0 1 0 5.6 8.2A4.6 4.6 0 0 1 291 50z" fill="#d99b1a"/>
+
+    <!-- balance card -->
+    <rect x="16" y="98" width="288" height="104" rx="16" fill="#1e2129"/>
+    <text class="t mu" x="32" y="122">Aydin · From Kairul · JPY</text>
+    <text class="t" x="32" y="156" font-size="26" font-weight="800" fill="#e8e9ec">¥11,400</text>
+    <text class="t mu" x="32" y="172">Running balance</text>
+    <rect x="32" y="182" width="256" height="7" rx="3.5" fill="#3a3f4b"/>
+    <rect x="32" y="182" width="159" height="7" rx="3.5" fill="#2fa86a"/>
+
+    <text class="t" x="32" y="228" font-size="9.5" font-weight="600" fill="#9aa0ac" letter-spacing="0.06em">14 SEPTEMBER</text>
+
+    <!-- tx 1 -->
+    <rect x="16" y="238" width="288" height="60" rx="14" fill="#1e2129"/>
+    <rect x="30" y="254" width="28" height="28" rx="9" fill="#2f6fed" opacity="0.2"/>
+    <path d="M38 268h12M44 262v12" stroke="#7ba5ff" stroke-width="2" stroke-linecap="round"/>
+    <text class="t ti" x="68" y="264">Convenience store</text>
+    <text class="t mu" x="68" y="279">Food · 7:42 pm</text>
+    <text class="t amt" x="288" y="272" fill="#d64545" text-anchor="end">−¥620</text>
+
+    <!-- tx 2 : split -->
+    <rect x="16" y="306" width="288" height="60" rx="14" fill="#1e2129"/>
+    <rect x="30" y="322" width="28" height="28" rx="9" fill="#2fa86a" opacity="0.2"/>
+    <path d="M38 336h12M44 330v12" stroke="#4cc78c" stroke-width="2" stroke-linecap="round"/>
+    <text class="t ti" x="68" y="332">Souvenir shop</text>
+    <text class="t mu" x="68" y="347">Souvenirs · 3:10 pm</text>
+    <rect x="150" y="338" width="40" height="14" rx="7" fill="#2f6fed" opacity="0.22"/>
+    <text class="t" x="170" y="348" font-size="8" font-weight="600" fill="#7ba5ff" text-anchor="middle">🔗 split</text>
+    <text class="t amt" x="288" y="340" fill="#d64545" text-anchor="end">−¥2,800</text>
+
+    <!-- tx 3 : with receipt -->
+    <rect x="16" y="374" width="288" height="60" rx="14" fill="#1e2129"/>
+    <rect x="30" y="390" width="28" height="28" rx="9" fill="#d99b1a" opacity="0.2"/>
+    <path d="M38 404h12M44 398v12" stroke="#e0a53a" stroke-width="2" stroke-linecap="round"/>
+    <text class="t ti" x="68" y="400">Subway day pass</text>
+    <text class="t mu" x="68" y="415">Transport · 8:55 am</text>
+    <rect x="152" y="406" width="20" height="14" rx="4" fill="#3a3f4b"/>
+    <path d="M157 413.5l2.6 2.6 5-5.2" stroke="#9aa0ac" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+    <text class="t amt" x="288" y="408" fill="#d64545" text-anchor="end">−¥800</text>
+
+    <text class="t" x="32" y="464" font-size="9.5" font-weight="600" fill="#9aa0ac" letter-spacing="0.06em">12 SEPTEMBER</text>
+
+    <!-- tx 4 : top up -->
+    <rect x="16" y="474" width="288" height="60" rx="14" fill="#1e2129"/>
+    <rect x="30" y="490" width="28" height="28" rx="9" fill="#2fa86a" opacity="0.22"/>
+    <path d="M44 510v-12M39 503l5-5 5 5" stroke="#4cc78c" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text class="t ti" x="68" y="500">Top up from Kairul</text>
+    <text class="t mu" x="68" y="515">Airport exchange</text>
+    <text class="t amt" x="288" y="508" fill="#2fa86a" text-anchor="end">+¥30,000</text>
+
+    <!-- export row -->
+    <rect x="16" y="550" width="138" height="42" rx="21" fill="#262a33"/>
+    <text class="t" x="85" y="576" font-size="11" font-weight="600" fill="#e8e9ec" text-anchor="middle">Export CSV</text>
+    <rect x="166" y="550" width="138" height="42" rx="21" fill="#262a33"/>
+    <text class="t" x="235" y="576" font-size="11" font-weight="600" fill="#e8e9ec" text-anchor="middle">PDF report</text>
+
+    <!-- bottom bar -->
+    <rect x="0" y="604" width="320" height="56" fill="#1e2129"/>
+    <rect x="0" y="604" width="320" height="1" fill="#343846"/>
+    <g class="t" text-anchor="middle">
+      <rect x="46" y="616" width="28" height="18" rx="4" fill="none" stroke="#9aa0ac" stroke-width="1.8"/>
+      <text x="60" y="648" font-size="8.5" font-weight="500" fill="#9aa0ac">Dashboard</text>
+      <rect x="146" y="616" width="28" height="18" rx="4" fill="none" stroke="#9aa0ac" stroke-width="1.8"/>
+      <text x="160" y="648" font-size="8.5" font-weight="500" fill="#9aa0ac">Budgets</text>
+      <circle cx="260" cy="625" r="9" fill="none" stroke="#7ba5ff" stroke-width="1.8"/>
+      <path d="M260 620v5.5l3.5 2.5" stroke="#7ba5ff" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+      <text x="260" y="648" font-size="8.5" font-weight="600" fill="#7ba5ff">History</text>
+    </g>
+    <rect x="118" y="654" width="84" height="4" rx="2" fill="#e8e9ec" opacity="0.3"/>
+  </g>
+</svg>

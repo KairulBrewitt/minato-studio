@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TabiLog — family travel budgets, per person and per currency | Minato Studio</title>
+<meta name="description" content="TabiLog gives every traveller their own budget in their own currency. Snap receipts now and file them later, split one shop receipt across several wallets, and export a PDF report that explains where the money went.">
+<meta name="theme-color" content="#fbfaf8">
+<link rel="icon" href="assets/img/minato-mark.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/poppins-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<meta property="og:type" content="website">
+<meta property="og:title" content="TabiLog — family travel budgets">
+<meta property="og:description" content="A budget per traveller, in their own currency. Receipts that can wait until you have a minute.">
+<script>
+(function(){var d=document.documentElement;d.classList.add('js');try{var t=localStorage.getItem('minato-theme');if(t==='dark'||t==='light'){d.setAttribute('data-theme',t);var m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute('content',t==='dark'?'#08131c':'#fbfaf8');}}catch(e){}})();
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html" aria-label="Minato Studio — home">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+        <defs>
+          <linearGradient id="bm" x1="0" y1="0" x2="0.35" y2="1"><stop offset="0" stop-color="#15859a"/><stop offset="1" stop-color="#0a2233"/></linearGradient>
+          <clipPath id="bc"><rect width="40" height="40" rx="11"/></clipPath>
+        </defs>
+        <g clip-path="url(#bc)">
+          <rect width="40" height="40" fill="url(#bm)"/>
+          <circle cx="20" cy="17.5" r="6.6" fill="#f0a03c"/>
+          <rect y="24" width="40" height="16" fill="#071a27" opacity="0.55"/>
+          <g stroke="#7fd6e4" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.85"><path d="M6 28.5q3-1.6 6 0t6 0 6 0 6 0"/><path d="M9 33q3-1.6 6 0t6 0 6 0"/></g>
+          <g stroke="#f7f3ec" stroke-width="3" stroke-linecap="round" fill="none"><path d="M4.5 11.5v8.5q0 4.5 4.5 4.5"/><path d="M35.5 11.5v8.5q0 4.5-4.5 4.5"/></g>
+        </g>
+      </svg>
+      <span class="brand-name"><b>Minato</b><span>Studio</span></span>
+    </a>
+
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="tabilog.html" aria-current="page">TabiLog</a>
+      <a href="tabipace.html">TabiPace</a>
+      <a href="tabiplanner.html">TabiPlanner</a>
+      <a href="about.html">About</a>
+      <a href="updates.html">Updates</a>
+      <a href="support.html">Support</a>
+    </nav>
+
+    <div class="header-tools">
+      <button class="icon-btn theme-toggle" type="button" aria-label="Switch theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.2 5.2l1.4 1.4M17.4 17.4l1.4 1.4M18.8 5.2l-1.4 1.4M6.6 17.4l-1.4 1.4"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
+      </button>
+      <button class="icon-btn nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================================================== hero -->
+  <section class="hero hero-deep">
+    <svg class="hero-horizon" viewBox="0 0 1440 180" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 120q180-46 360-14t360 8 360-30 360 12v84H0z" fill="rgba(47,111,237,.16)"/>
+      <path d="M0 146q200-34 400-8t400 4 320-22 320 16v44H0z" fill="rgba(69,185,204,.1)"/>
+    </svg>
+
+    <div class="wrap">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">TabiLog</span>
+          <h1>Family budgets, wherever life takes you.</h1>
+          <p class="lede">Every traveller gets their own pot of money, in their own currency. Log what's spent in seconds — or photograph the receipt now and deal with it when you sit down.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="#features">
+              What it does
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v13M6 12l6 6 6-6"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="#faq">Common questions</a>
+          </div>
+          <p style="margin-top:1.5rem;"><span class="pill pill-live">In use</span></p>
+        </div>
+
+        <div class="hero-art">
+          <div class="phone-stack">
+            <div class="phone phone-back" aria-hidden="true">
+              <div class="phone-screen"><img src="assets/img/shots/app-budgets.webp" alt="" width="540" height="1113" loading="eager"></div>
+            </div>
+            <div class="phone">
+              <div class="phone-screen">
+                <img src="assets/img/shots/app-dashboard.webp" alt="The TabiLog dashboard: a bar chart of each budget&apos;s spending against its monthly limit, and a donut chart breaking down spending by category." width="540" height="1113" loading="eager">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================== the problem -->
+  <section class="section">
+    <div class="wrap wrap-narrow center">
+      <span class="eyebrow center-x" style="display:inline-flex;">Why it exists</span>
+      <h2>Shared expense apps solve the wrong problem</h2>
+      <p class="lede">Splitwise and its cousins assume a group of adults settling up afterwards. A family trip isn't that. Each kid has spending money — some from you, some from their grandmother — and the question is never "who owes whom". It's <em>has Aaron got anything left, and is it in yen or dollars?</em></p>
+    </div>
+  </section>
+
+  <!-- ================================================== features -->
+  <section class="section section-sunk" id="features">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">What it does</span>
+        <h2>Four things it's built to do well</h2>
+      </div>
+
+      <!-- 1 -->
+      <div class="feature-row">
+        <div class="feature-row-copy">
+          <h3>A separate pot per person — and per giver</h3>
+          <p>Each traveller gets their own card, and inside it as many budgets as they need. One child can hold a yen budget from you and an Australian dollar budget from their grandmother at the same time, because to a nine-year-old those <em>are</em> two different things.</p>
+          <ul class="tick-list">
+            <li>Each budget carries <strong>its own currency</strong> — 16 supported, from AUD and JPY to SGD, MYR and NZD — and its own artwork, so you recognise it before you read it.</li>
+            <li>Balance is simply <strong>top-ups minus expenses</strong>. No reconciliation, no settling up, no one owing anyone.</li>
+            <li>An optional <strong>monthly limit</strong>, with a progress bar and a plain-language line: <em>A$1,788.00 of A$2,200.00 spent this month</em>.</li>
+            <li><strong>Top up, log an expense, open the history or change the settings</strong> without leaving the card.</li>
+          </ul>
+        </div>
+        <div class="feature-row-art">
+          <div class="phone">
+            <div class="phone-screen">
+              <img src="assets/img/shots/app-budgets.webp" alt="The Budgets tab: a card per person containing their budgets, each showing a balance, a progress bar against its monthly limit, and buttons to top up, log an expense, view history or change settings." width="540" height="1113" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="feature-row reverse">
+        <div class="feature-row-copy">
+          <h3>The whole trip, answered on one screen</h3>
+          <p>The dashboard is scoped to the trip's dates, not just the calendar month. It answers the two questions that actually get asked out loud: <em>who is close to running out</em>, and <em>where has it all gone</em>.</p>
+          <ul class="tick-list">
+            <li><strong>Budgets at a glance</strong> — every budget as a bar against its limit, coloured green, amber or red so the problem finds you rather than the other way round.</li>
+            <li><strong>Spending by category</strong>, broken out per currency, so nothing depends on an exchange rate that moved since you paid.</li>
+            <li>A <strong>trip date range</strong> across the top, and a "show total budget" toggle for when you want the number rather than the detail.</li>
+            <li><strong>Add Expense</strong> and <strong>Snap Receipt</strong> stay pinned to the bottom of every screen — logging something is never more than one tap away.</li>
+          </ul>
+        </div>
+        <div class="feature-row-art">
+          <div class="phone">
+            <div class="phone-screen">
+              <img src="assets/img/shots/app-dashboard.webp" alt="The Dashboard: a trip date range, a "budgets at a glance" bar chart colour-coded by how much of each limit is spent, and a spending-by-category donut chart for Australian dollars." width="540" height="1113" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="feature-row">
+        <div class="feature-row-copy">
+          <h3>A shopping list that turns into expenses</h3>
+          <p>The things you still need to buy live in the same app as the money you have left — which is the only place they were ever useful. Add an item with an estimate, tick it off when you've bought it, and turn it into a real transaction with one button.</p>
+          <ul class="tick-list">
+            <li>Each item can carry a <strong>note, an estimated cost, a person and a budget</strong> — all optional, because most of the time you just want to write down "pocket wifi".</li>
+            <li><strong>Log as expense</strong> converts a ticked item straight into a transaction against the budget you chose.</li>
+            <li>Notes are for the thing you'll otherwise forget: <em>return at the airport counter before the flight home</em>.</li>
+          </ul>
+        </div>
+        <div class="feature-row-art">
+          <div class="phone">
+            <div class="phone-screen">
+              <img src="assets/img/shots/app-shopping.webp" alt="The Shopping List tab: a form for adding an item with an optional note, estimated cost, person and budget, above a checklist item with buttons to log it as an expense, edit it or delete it." width="540" height="1113" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="feature-row reverse">
+        <div class="feature-row-copy">
+          <h3>Every transaction, and what it did to the budget</h3>
+          <p>Open any budget's history and you get the spending trend against the limit, then the full ledger underneath — date, type, category, description and amount, all editable.</p>
+          <ul class="tick-list">
+            <li><strong>Spending per month</strong> plotted against the budget limit, so an overspend shows up as a shape rather than a number you have to interpret.</li>
+            <li>Every row is <strong>editable and deletable</strong>, with any attached receipt photo viewable full size.</li>
+            <li>Export the lot to <strong>PDF, Excel or CSV</strong>, for one person or for everyone.</li>
+          </ul>
+        </div>
+        <div class="feature-row-art">
+          <div class="phone">
+            <div class="phone-screen">
+              <img src="assets/img/shots/app-history.webp" alt="A budget history view: a "spending per month" bar chart with a dashed budget-limit line, above a table of transactions listing date, type, category, description and amount." width="540" height="1113" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================================================== everything else -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Also in there</span>
+        <h2>The details that make it liveable</h2>
+      </div>
+
+      <div class="grid grid-3">
+        <article class="card reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v16M4 12h16"/></svg>
+          </div>
+          <h3>Snap now, sort later</h3>
+          <p>Photograph a receipt with <em>zero</em> other input — no amount, no category, no budget — and finish it later from the pending-receipts inbox. Built for days where there is no time to stop and log every purchase.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18"/><circle cx="8" cy="14" r="1.6"/><circle cx="14" cy="14" r="1.6"/></svg>
+          </div>
+          <h3>Private households</h3>
+          <p>Each family or friend group logs into its own household. Data is fully isolated — you can share the app with people you'd never share a budget with.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
+          </div>
+          <h3>Light and dark</h3>
+          <p>Toggled in settings and remembered per household — because a lot of this gets logged in a dark hotel room with someone asleep next to you.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.3-2.9 7.9-7 9.5-4.1-1.6-7-5.2-7-9.5V6z"/><path d="M9 12l2.2 2.2L15.5 10"/></svg>
+          </div>
+          <h3>Hardened where it counts</h3>
+          <p>Rate-limited sign-in, security headers, HTTPS enforced, and new households only by an invite code you control. No open sign-ups.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8.5v.2M12 11.5v4.2"/></svg>
+          </div>
+          <h3>One receipt, several budgets</h3>
+          <p>The souvenir shop hands you one total covering three children. Enter it once, split it evenly or by custom amounts, and each budget gets its own linked transaction that balances back to the total.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z"/></svg>
+          </div>
+          <h3>A way to tell us it's wrong</h3>
+          <p>A feedback button in the header sends a bug report or suggestion straight to the studio. Nobody else in your household can read what you sent.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================== gallery -->
+  <section class="section section-sunk">
+    <div class="wrap">
+      <div class="section-head center">
+        <span class="eyebrow center-x" style="display:inline-flex;">A look around</span>
+        <h2>The app, screen by screen</h2>
+        <p>Select any screen to see it larger.</p>
+      </div>
+
+      <div class="gallery">
+        <figure class="shot" role="button" tabindex="0" aria-label="Enlarge: Dashboard">
+          <div class="phone"><div class="phone-screen"><img src="assets/img/shots/app-dashboard.webp" alt="The dashboard with a trip date range, budgets-at-a-glance bar chart and a spending-by-category donut." width="540" height="1113" loading="lazy"></div></div>
+          <figcaption>Dashboard</figcaption>
+        </figure>
+
+        <figure class="shot" role="button" tabindex="0" aria-label="Enlarge: Budgets">
+          <div class="phone"><div class="phone-screen"><img src="assets/img/shots/app-budgets.webp" alt="The budgets tab: one card per person, each holding their budgets with balances and limit progress." width="540" height="1113" loading="lazy"></div></div>
+          <figcaption>Budgets</figcaption>
+        </figure>
+
+        <figure class="shot" role="button" tabindex="0" aria-label="Enlarge: Shopping list">
+          <div class="phone"><div class="phone-screen"><img src="assets/img/shots/app-shopping.webp" alt="The shopping list, with a form for adding items and a checklist item that can be logged as an expense." width="540" height="1113" loading="lazy"></div></div>
+          <figcaption>Shopping list</figcaption>
+        </figure>
+
+        <figure class="shot" role="button" tabindex="0" aria-label="Enlarge: History and trend">
+          <div class="phone"><div class="phone-screen"><img src="assets/img/shots/app-history.webp" alt="A budget history: spending per month against the limit, above the full transaction table." width="540" height="1113" loading="lazy"></div></div>
+          <figcaption>History &amp; trend</figcaption>
+        </figure>
+      </div>
+
+      <p class="center" style="margin-top:2rem;"><small style="color:var(--ink-3);">Screenshots from the Android build, with sample data. The backdrop changes with the household's chosen theme.</small></p>
+    </div>
+  </section>
+
+  <!-- ================================================== faq -->
+  <section class="section" id="faq">
+    <div class="wrap wrap-narrow">
+      <div class="section-head">
+        <span class="eyebrow">Questions</span>
+        <h2>The things people ask</h2>
+      </div>
+
+      <div class="faq">
+        <details>
+          <summary>Does it show ads?</summary>
+          <div class="faq-body"><p>The Android build does — banner ads served by Google AdMob, which is what pays for the app being free. Nothing you enter is shared with the ad network: your budgets, transactions and receipts never leave your household. The web version has no ads at all. The <a class="link" href="privacy.html">privacy page</a> sets out exactly what AdMob collects.</p></div>
+        </details>
+
+        <details>
+          <summary>Is this an expense-splitting app?</summary>
+          <div class="faq-body"><p>No. There's no "who owes whom" and no settling up. TabiLog tracks pots of money that belong to individual people. The split feature divides <em>one receipt</em> across several of those pots at the moment you pay — it doesn't create a debt between anyone.</p></div>
+        </details>
+
+        <details>
+          <summary>Can it handle more than one currency at once?</summary>
+          <div class="faq-body"><p>Yes, and it doesn't try to be clever about it. Each wallet has one currency and stays in it. Totals and charts are shown per currency rather than converted to a single one, so you never see a number that depends on an exchange rate that moved.</p></div>
+        </details>
+
+        <details>
+          <summary>Who can see my household's data?</summary>
+          <div class="faq-body">
+            <p>Only people who log into that household. Households are fully isolated from one another — another family using the same deployment cannot see, reach or affect your data.</p>
+            <p>Feedback you send through the app is the one exception, and it goes only to the studio: nobody in your household can read it, including you.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Can I get my data out?</summary>
+          <div class="faq-body"><p>Always. CSV, Excel and PDF, for one person or everyone, at any time. There's also a self-service account deletion under settings that permanently wipes the household and everything in it.</p></div>
+        </details>
+
+        <details>
+          <summary>Is there a public sign-up?</summary>
+          <div class="faq-body"><p>No. Creating a household requires an invite code, which keeps the deployment to people who were actually invited. This site is here to explain what the app is, not to sign anyone up.</p></div>
+        </details>
+
+        <details>
+          <summary>Does it work without a signal?</summary>
+          <div class="faq-body"><p>The Android build stores its data on the device, which is the configuration built for travel — the point at which you most need it is usually the point at which you have least reception.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================== cta -->
+  <section class="section-sm">
+    <div class="wrap">
+      <div class="cta-band reveal">
+        <h2>Two more on the way</h2>
+        <p>TabiLog handles the money. TabiPace works out whether the day is survivable for everyone in the group, and TabiPlanner keeps the whole trip on one screen.</p>
+        <div class="btn-row center" style="margin-top:1.5rem;">
+          <a class="btn btn-primary" href="tabipace.html">
+            TabiPace
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="tabiplanner.html">TabiPlanner</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+            <defs>
+              <linearGradient id="fm" x1="0" y1="0" x2="0.35" y2="1"><stop offset="0" stop-color="#15859a"/><stop offset="1" stop-color="#0a2233"/></linearGradient>
+              <clipPath id="fc"><rect width="40" height="40" rx="11"/></clipPath>
+            </defs>
+            <g clip-path="url(#fc)">
+              <rect width="40" height="40" fill="url(#fm)"/>
+              <circle cx="20" cy="17.5" r="6.6" fill="#f0a03c"/>
+              <rect y="24" width="40" height="16" fill="#071a27" opacity="0.55"/>
+              <g stroke="#7fd6e4" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.85"><path d="M6 28.5q3-1.6 6 0t6 0 6 0 6 0"/><path d="M9 33q3-1.6 6 0t6 0 6 0"/></g>
+              <g stroke="#f7f3ec" stroke-width="3" stroke-linecap="round" fill="none"><path d="M4.5 11.5v8.5q0 4.5 4.5 4.5"/><path d="M35.5 11.5v8.5q0 4.5-4.5 4.5"/></g>
+            </g>
+          </svg>
+          <span class="brand-name"><b>Minato</b><span>Studio</span></span>
+        </a>
+        <p>Small, focused travel apps. Built in Sydney, Australia.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Apps</h4>
+        <ul><li><a href="tabilog.html">TabiLog</a></li><li><a href="tabipace.html">TabiPace</a></li><li><a href="tabiplanner.html">TabiPlanner</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>Studio</h4>
+        <ul><li><a href="about.html">About</a></li><li><a href="updates.html">Updates</a></li><li><a href="support.html">Support</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span data-year>2026</span> Minato Studio. All rights reserved.</p>
+      <p class="footer-jp">港 — a harbour. Where journeys begin and end.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>

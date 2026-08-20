@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 660" width="320" height="660" role="img" aria-label="TabiLog split expense screen, dividing one receipt total across several people's budgets">
+  <defs>
+    <clipPath id="scr"><rect width="320" height="660" rx="20"/></clipPath>
+    <style>
+      .t { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+      .h1 { font-size: 17px; font-weight: 700; fill: #1f2430; }
+      .lb { font-size: 9.5px; font-weight: 600; fill: #6b7280; letter-spacing: 0.06em; }
+      .val { font-size: 12.5px; font-weight: 600; fill: #1f2430; }
+      .mu { font-size: 9.5px; font-weight: 500; fill: #6b7280; }
+      .nm { font-size: 11.5px; font-weight: 600; fill: #1f2430; }
+    </style>
+  </defs>
+
+  <g clip-path="url(#scr)">
+    <rect width="320" height="660" fill="#f4f5f7"/>
+
+    <text class="t" x="18" y="20" font-size="10" font-weight="700" fill="#1f2430">9:41</text>
+    <g fill="#1f2430">
+      <rect x="262" y="12" width="3" height="7" rx="1"/><rect x="267" y="10" width="3" height="9" rx="1"/><rect x="272" y="8" width="3" height="11" rx="1"/>
+      <rect x="284" y="9" width="17" height="9" rx="2.5" fill="none" stroke="#1f2430" stroke-width="1.2"/><rect x="286" y="11" width="11" height="5" rx="1"/>
+    </g>
+
+    <rect x="0" y="30" width="320" height="52" fill="#ffffff"/>
+    <rect x="0" y="81.5" width="320" height="1" fill="#e2e4e9"/>
+    <path d="M28 56 l8-8 m-8 8 l8 8 m-8-8 h18" stroke="#1f2430" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text class="t h1" x="60" y="61">Split an expense</text>
+
+    <!-- total field -->
+    <rect x="16" y="98" width="288" height="86" rx="16" fill="#ffffff"/>
+    <text class="t lb" x="32" y="120">TOTAL ON THE RECEIPT</text>
+    <text class="t" x="32" y="152" font-size="28" font-weight="800" fill="#1f2430">¥8,400</text>
+    <rect x="32" y="162" width="256" height="1.5" fill="#2f6fed"/>
+    <text class="t mu" x="32" y="177">Souvenir shop · Kyoto</text>
+
+    <!-- split mode toggle -->
+    <rect x="16" y="196" width="288" height="34" rx="10" fill="#e9ebef"/>
+    <rect x="19" y="199" width="141" height="28" rx="8" fill="#ffffff"/>
+    <text class="t" x="89" y="217.5" font-size="11" font-weight="600" fill="#1f2430" text-anchor="middle">Split evenly</text>
+    <text class="t" x="232" y="217.5" font-size="11" font-weight="500" fill="#6b7280" text-anchor="middle">Custom amounts</text>
+
+    <!-- rows -->
+    <text class="t lb" x="32" y="256">ACROSS 3 BUDGETS</text>
+
+    <g>
+      <rect x="16" y="266" width="288" height="62" rx="14" fill="#ffffff"/>
+      <rect x="30" y="284" width="26" height="26" rx="13" fill="#fde8ee"/>
+      <text class="t" x="43" y="301" font-size="11" font-weight="700" fill="#b3576f" text-anchor="middle">A</text>
+      <text class="t nm" x="66" y="292">Aydin</text>
+      <text class="t mu" x="66" y="307">From Kairul · JPY</text>
+      <text class="t val" x="288" y="301" text-anchor="end">¥2,800</text>
+    </g>
+
+    <g>
+      <rect x="16" y="336" width="288" height="62" rx="14" fill="#ffffff"/>
+      <rect x="30" y="354" width="26" height="26" rx="13" fill="#e8effd"/>
+      <text class="t" x="43" y="371" font-size="11" font-weight="700" fill="#2f6fed" text-anchor="middle">A</text>
+      <text class="t nm" x="66" y="362">Aaron</text>
+      <text class="t mu" x="66" y="377">From Kairul · JPY</text>
+      <text class="t val" x="288" y="371" text-anchor="end">¥2,800</text>
+    </g>
+
+    <g>
+      <rect x="16" y="406" width="288" height="62" rx="14" fill="#ffffff"/>
+      <rect x="30" y="424" width="26" height="26" rx="13" fill="#e4f4ec"/>
+      <text class="t" x="43" y="441" font-size="11" font-weight="700" fill="#1f8a5b" text-anchor="middle">N</text>
+      <text class="t nm" x="66" y="432">Nadia</text>
+      <text class="t mu" x="66" y="447">Holiday pot · JPY</text>
+      <text class="t val" x="288" y="441" text-anchor="end">¥2,800</text>
+    </g>
+
+    <!-- reconciliation strip -->
+    <rect x="16" y="482" width="288" height="46" rx="14" fill="#e4f4ec"/>
+    <circle cx="42" cy="505" r="11" fill="#2fa86a"/>
+    <path d="M37 505l3.4 3.4 6.6-6.8" stroke="#ffffff" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text class="t" x="62" y="502" font-size="11" font-weight="600" fill="#1a6b45">Balances exactly</text>
+    <text class="t" x="62" y="516" font-size="9.5" font-weight="500" fill="#2f8a5f">¥2,800 × 3 = ¥8,400 · nothing left over</text>
+
+    <!-- linked note -->
+    <rect x="16" y="540" width="288" height="34" rx="10" fill="#ffffff"/>
+    <text class="t" x="32" y="556" font-size="9.5" font-weight="600" fill="#6b7280">🔗 split</text>
+    <text class="t" x="32" y="568" font-size="9" font-weight="500" fill="#6b7280">Each budget gets its own linked transaction</text>
+
+    <!-- save -->
+    <rect x="16" y="588" width="288" height="46" rx="23" fill="#2f6fed"/>
+    <text class="t" x="160" y="616" font-size="12.5" font-weight="600" fill="#ffffff" text-anchor="middle">Save 3 transactions</text>
+
+    <rect x="118" y="648" width="84" height="4" rx="2" fill="#1f2430" opacity="0.28"/>
+  </g>
+</svg>

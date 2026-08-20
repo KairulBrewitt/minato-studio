@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 660" width="320" height="660" role="img" aria-label="TabiPace day view showing a planned day with pacing warnings for the youngest and oldest travellers">
+  <defs>
+    <clipPath id="scr"><rect width="320" height="660" rx="20"/></clipPath>
+    <style>
+      .t { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+      .h1 { font-size: 17px; font-weight: 700; fill: #24201e; }
+      .ti { font-size: 12px; font-weight: 600; fill: #24201e; }
+      .mu { font-size: 9.5px; font-weight: 500; fill: #7b716b; }
+      .tm { font-size: 9.5px; font-weight: 700; fill: #7b716b; }
+    </style>
+  </defs>
+
+  <g clip-path="url(#scr)">
+    <rect width="320" height="660" fill="#faf6f2"/>
+
+    <text class="t" x="18" y="20" font-size="10" font-weight="700" fill="#24201e">9:41</text>
+    <g fill="#24201e">
+      <rect x="262" y="12" width="3" height="7" rx="1"/><rect x="267" y="10" width="3" height="9" rx="1"/><rect x="272" y="8" width="3" height="11" rx="1"/>
+      <rect x="284" y="9" width="17" height="9" rx="2.5" fill="none" stroke="#24201e" stroke-width="1.2"/><rect x="286" y="11" width="11" height="5" rx="1"/>
+    </g>
+
+    <rect x="0" y="30" width="320" height="56" fill="#ffffff"/>
+    <rect x="0" y="85.5" width="320" height="1" fill="#e8e0d8"/>
+    <text class="t h1" x="18" y="58">Day 4 · Nara</text>
+    <text class="t mu" x="18" y="74">Tue 24 September · 6 travellers</text>
+
+    <!-- verdict banner -->
+    <rect x="16" y="100" width="288" height="70" rx="16" fill="#fbeae5"/>
+    <circle cx="44" cy="127" r="14" fill="#d1553a"/>
+    <path d="M44 120v9" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round"/>
+    <circle cx="44" cy="134" r="1.6" fill="#ffffff"/>
+    <text class="t" x="68" y="123" font-size="12" font-weight="700" fill="#9c3b25">This day breaks two people</text>
+    <text class="t" x="68" y="139" font-size="9.5" font-weight="500" fill="#b04f34">Mei (3) and Halim (78) — before 2 pm</text>
+    <rect x="68" y="148" width="86" height="16" rx="8" fill="#d1553a" opacity="0.16"/>
+    <text class="t" x="111" y="159" font-size="8.5" font-weight="700" fill="#9c3b25" text-anchor="middle">SEE WHY</text>
+
+    <!-- timeline -->
+    <rect x="52" y="192" width="2" height="368" fill="#e8e0d8"/>
+
+    <!-- 08:30 breakfast, ok -->
+    <text class="t tm" x="40" y="204" text-anchor="end">08:30</text>
+    <circle cx="53" cy="200" r="6" fill="#ffffff" stroke="#4a9d6e" stroke-width="2"/>
+    <rect x="70" y="184" width="234" height="52" rx="14" fill="#ffffff"/>
+    <text class="t ti" x="86" y="205">Breakfast at the ryokan</text>
+    <text class="t mu" x="86" y="220">40 min · seated · everyone fine</text>
+    <rect x="278" y="200" width="14" height="14" rx="7" fill="#4a9d6e" opacity="0.18"/>
+    <path d="M281.5 207l2 2 4-4.2" stroke="#4a9d6e" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+
+    <!-- 09:20 walk, warning -->
+    <text class="t tm" x="40" y="264" text-anchor="end">09:20</text>
+    <circle cx="53" cy="260" r="6" fill="#ffffff" stroke="#c98a2e" stroke-width="2"/>
+    <rect x="70" y="244" width="234" height="66" rx="14" fill="#ffffff" stroke="#f0d9a8"/>
+    <text class="t ti" x="86" y="265">Walk to Nara Park</text>
+    <text class="t mu" x="86" y="280">1.8 km · 26 min · no shade</text>
+    <rect x="86" y="288" width="200" height="14" rx="7" fill="#c98a2e" opacity="0.14"/>
+    <text class="t" x="94" y="298.5" font-size="8" font-weight="600" fill="#96661c">Mei walks 0.8 km before a carry</text>
+
+    <!-- 10:30 temple stairs, breaks -->
+    <text class="t tm" x="40" y="342" text-anchor="end">10:30</text>
+    <circle cx="53" cy="338" r="6" fill="#ffffff" stroke="#d1553a" stroke-width="2"/>
+    <rect x="70" y="322" width="234" height="82" rx="14" fill="#ffffff" stroke="#f0c4b6"/>
+    <text class="t ti" x="86" y="343">Todai-ji · main hall</text>
+    <text class="t mu" x="86" y="358">54 stairs · 90 min standing</text>
+    <rect x="86" y="366" width="200" height="14" rx="7" fill="#d1553a" opacity="0.14"/>
+    <text class="t" x="94" y="376.5" font-size="8" font-weight="600" fill="#9c3b25">Halim: limit is 20 stairs unbroken</text>
+    <rect x="86" y="384" width="200" height="14" rx="7" fill="#d1553a" opacity="0.14"/>
+    <text class="t" x="94" y="394.5" font-size="8" font-weight="600" fill="#9c3b25">Mei: past nap window by 40 min</text>
+
+    <!-- 12:30 lunch -->
+    <text class="t tm" x="40" y="436" text-anchor="end">12:30</text>
+    <circle cx="53" cy="432" r="6" fill="#ffffff" stroke="#4a9d6e" stroke-width="2"/>
+    <rect x="70" y="416" width="234" height="52" rx="14" fill="#ffffff"/>
+    <text class="t ti" x="86" y="437">Lunch · air-conditioned</text>
+    <text class="t mu" x="86" y="452">60 min · seated · rest for Halim</text>
+
+    <!-- 14:00 suggestion -->
+    <text class="t tm" x="40" y="500" text-anchor="end">14:00</text>
+    <circle cx="53" cy="496" r="6" fill="#faf6f2" stroke="#8a7f78" stroke-width="2" stroke-dasharray="2.5 2"/>
+    <rect x="70" y="480" width="234" height="66" rx="14" fill="#f2ece5" stroke="#ddd2c8" stroke-dasharray="4 3"/>
+    <text class="t" x="86" y="501" font-size="11.5" font-weight="600" fill="#5d5450">Suggested: split the group</text>
+    <text class="t mu" x="86" y="516">Halim + Mei rest · others take the hill</text>
+    <text class="t" x="86" y="533" font-size="8.5" font-weight="700" fill="#9c7a2e">Rejoin 16:30 at the south gate</text>
+
+    <!-- people strip -->
+    <rect x="16" y="566" width="288" height="60" rx="16" fill="#ffffff"/>
+    <g class="t" text-anchor="middle">
+      <circle cx="48" cy="590" r="13" fill="#fbeae5"/><text x="48" y="594" font-size="10" font-weight="700" fill="#d1553a">M</text>
+      <text x="48" y="616" font-size="7.5" font-weight="500" fill="#7b716b">Mei · 3</text>
+      <circle cx="96" cy="590" r="13" fill="#fbeae5"/><text x="96" y="594" font-size="10" font-weight="700" fill="#d1553a">H</text>
+      <text x="96" y="616" font-size="7.5" font-weight="500" fill="#7b716b">Halim · 78</text>
+      <circle cx="144" cy="590" r="13" fill="#e6f0e9"/><text x="144" y="594" font-size="10" font-weight="700" fill="#4a9d6e">S</text>
+      <text x="144" y="616" font-size="7.5" font-weight="500" fill="#7b716b">Sara · 41</text>
+      <circle cx="192" cy="590" r="13" fill="#e6f0e9"/><text x="192" y="594" font-size="10" font-weight="700" fill="#4a9d6e">R</text>
+      <text x="192" y="616" font-size="7.5" font-weight="500" fill="#7b716b">Rui · 12</text>
+      <circle cx="240" cy="590" r="13" fill="#e6f0e9"/><text x="240" y="594" font-size="10" font-weight="700" fill="#4a9d6e">A</text>
+      <text x="240" y="616" font-size="7.5" font-weight="500" fill="#7b716b">Ana · 38</text>
+      <circle cx="284" cy="590" r="13" fill="#f2ece5"/><text x="284" y="594" font-size="10" font-weight="700" fill="#8a7f78">+1</text>
+    </g>
+
+    <rect x="118" y="646" width="84" height="4" rx="2" fill="#24201e" opacity="0.25"/>
+  </g>
+</svg>

@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 660" width="320" height="660" role="img" aria-label="TabiLog dashboard showing a budgets-at-a-glance bar chart and a spending-by-category donut chart">
+  <defs>
+    <clipPath id="scr"><rect width="320" height="660" rx="20"/></clipPath>
+    <style>
+      .t { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+      .h1 { font-size: 17px; font-weight: 700; fill: #1f2430; }
+      .h2 { font-size: 12.5px; font-weight: 600; fill: #1f2430; }
+      .lb { font-size: 10.5px; font-weight: 500; fill: #1f2430; }
+      .mu { font-size: 9.5px; font-weight: 500; fill: #6b7280; }
+      .num { font-size: 9.5px; font-weight: 600; fill: #6b7280; }
+    </style>
+  </defs>
+
+  <g clip-path="url(#scr)">
+    <rect width="320" height="660" fill="#f4f5f7"/>
+
+    <!-- status bar -->
+    <text class="t" x="18" y="20" font-size="10" font-weight="700" fill="#1f2430">9:41</text>
+    <g fill="#1f2430">
+      <rect x="262" y="12" width="3" height="7" rx="1"/>
+      <rect x="267" y="10" width="3" height="9" rx="1"/>
+      <rect x="272" y="8" width="3" height="11" rx="1"/>
+      <rect x="284" y="9" width="17" height="9" rx="2.5" fill="none" stroke="#1f2430" stroke-width="1.2"/>
+      <rect x="286" y="11" width="11" height="5" rx="1"/>
+    </g>
+
+    <!-- app header -->
+    <rect x="0" y="30" width="320" height="52" fill="#ffffff"/>
+    <rect x="0" y="81.5" width="320" height="1" fill="#e2e4e9"/>
+    <circle cx="30" cy="56" r="12" fill="#2f6fed" opacity="0.12"/>
+    <path d="M30 49.5 l2.1 4.4 4.8 0.6 -3.5 3.3 0.9 4.7 -4.3-2.3 -4.3 2.3 0.9-4.7 -3.5-3.3 4.8-0.6z" fill="#2f6fed"/>
+    <text class="t h1" x="50" y="61">TabiLog</text>
+    <rect x="226" y="44" width="52" height="24" rx="12" fill="#2f6fed"/>
+    <text class="t" x="252" y="59.5" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle">+ Add</text>
+    <circle cx="295" cy="56" r="11" fill="#f0f1f4"/>
+    <circle cx="295" cy="53" r="3.4" fill="#6b7280"/>
+    <path d="M289.5 62.5a5.8 5.8 0 0 1 11 0z" fill="#6b7280"/>
+
+    <!-- tabs -->
+    <g class="t">
+      <rect x="16" y="94" width="288" height="34" rx="10" fill="#e9ebef"/>
+      <rect x="19" y="97" width="141" height="28" rx="8" fill="#ffffff"/>
+      <text x="89" y="115.5" font-size="11" font-weight="600" fill="#1f2430" text-anchor="middle">Dashboard</text>
+      <text x="232" y="115.5" font-size="11" font-weight="500" fill="#6b7280" text-anchor="middle">Budgets</text>
+    </g>
+
+    <!-- budgets at a glance -->
+    <rect x="16" y="140" width="288" height="212" rx="16" fill="#ffffff"/>
+    <text class="t h2" x="32" y="164">Budgets at a glance</text>
+    <text class="t mu" x="32" y="179">Spent this month vs. limit</text>
+
+    <!-- bar rows -->
+    <g class="t">
+      <!-- Aydin -->
+      <text class="lb" x="32" y="203">Aydin · From Kairul</text>
+      <text class="num" x="288" y="203" text-anchor="end">62%</text>
+      <rect x="32" y="209" width="256" height="9" rx="4.5" fill="#e9ebef"/>
+      <rect x="32" y="209" width="159" height="9" rx="4.5" fill="#2fa86a"/>
+      <text class="mu" x="32" y="230">¥18,600 of ¥30,000</text>
+
+      <!-- Aaron -->
+      <text class="lb" x="32" y="253">Aaron · From Kairul</text>
+      <text class="num" x="288" y="253" text-anchor="end">84%</text>
+      <rect x="32" y="259" width="256" height="9" rx="4.5" fill="#e9ebef"/>
+      <rect x="32" y="259" width="215" height="9" rx="4.5" fill="#d99b1a"/>
+      <text class="mu" x="32" y="280">¥25,200 of ¥30,000</text>
+
+      <!-- Mother -->
+      <text class="lb" x="32" y="303">Aydin · From Mother</text>
+      <text class="num" x="288" y="303" text-anchor="end">103%</text>
+      <rect x="32" y="309" width="256" height="9" rx="4.5" fill="#e9ebef"/>
+      <rect x="32" y="309" width="256" height="9" rx="4.5" fill="#d64545"/>
+      <text class="mu" x="32" y="330">A$206 of A$200 · over</text>
+    </g>
+
+    <!-- donut card -->
+    <rect x="16" y="366" width="288" height="200" rx="16" fill="#ffffff"/>
+    <text class="t h2" x="32" y="390">Spending by category</text>
+    <text class="t mu" x="32" y="405">Japanese yen · ¥43,800</text>
+
+    <!-- donut -->
+    <g transform="translate(88,478)">
+      <circle r="46" fill="none" stroke="#e9ebef" stroke-width="18"/>
+      <circle r="46" fill="none" stroke="#2f6fed" stroke-width="18"
+              stroke-dasharray="101 188" transform="rotate(-90)" stroke-linecap="butt"/>
+      <circle r="46" fill="none" stroke="#2fa86a" stroke-width="18"
+              stroke-dasharray="72 217" transform="rotate(35)" stroke-linecap="butt"/>
+      <circle r="46" fill="none" stroke="#d99b1a" stroke-width="18"
+              stroke-dasharray="54 235" transform="rotate(124)" stroke-linecap="butt"/>
+      <circle r="46" fill="none" stroke="#8b5cf6" stroke-width="18"
+              stroke-dasharray="35 254" transform="rotate(191)" stroke-linecap="butt"/>
+      <circle r="46" fill="none" stroke="#d64545" stroke-width="18"
+              stroke-dasharray="27 262" transform="rotate(234)" stroke-linecap="butt"/>
+      <text class="t" y="-2" font-size="15" font-weight="700" fill="#1f2430" text-anchor="middle">¥43.8k</text>
+      <text class="t" y="13" font-size="8.5" font-weight="500" fill="#6b7280" text-anchor="middle">total</text>
+    </g>
+
+    <!-- legend -->
+    <g class="t">
+      <circle cx="166" cy="443" r="4.5" fill="#2f6fed"/><text class="mu" x="177" y="446">Food · 35%</text>
+      <circle cx="166" cy="465" r="4.5" fill="#2fa86a"/><text class="mu" x="177" y="468">Souvenirs · 25%</text>
+      <circle cx="166" cy="487" r="4.5" fill="#d99b1a"/><text class="mu" x="177" y="490">Transport · 19%</text>
+      <circle cx="166" cy="509" r="4.5" fill="#8b5cf6"/><text class="mu" x="177" y="512">Attractions · 12%</text>
+      <circle cx="166" cy="531" r="4.5" fill="#d64545"/><text class="mu" x="177" y="534">Other · 9%</text>
+    </g>
+
+    <!-- bottom bar -->
+    <rect x="0" y="596" width="320" height="64" fill="#ffffff"/>
+    <rect x="0" y="596" width="320" height="1" fill="#e2e4e9"/>
+    <g class="t" text-anchor="middle">
+      <rect x="46" y="610" width="28" height="20" rx="4" fill="none" stroke="#2f6fed" stroke-width="1.8"/>
+      <rect x="52" y="620" width="4" height="7" fill="#2f6fed"/><rect x="58" y="615" width="4" height="12" fill="#2f6fed"/><rect x="64" y="618" width="4" height="9" fill="#2f6fed"/>
+      <text x="60" y="644" font-size="8.5" font-weight="600" fill="#2f6fed">Dashboard</text>
+
+      <rect x="146" y="610" width="28" height="20" rx="4" fill="none" stroke="#6b7280" stroke-width="1.8"/>
+      <circle cx="167" cy="620" r="2.2" fill="#6b7280"/>
+      <text x="160" y="644" font-size="8.5" font-weight="500" fill="#6b7280">Budgets</text>
+
+      <circle cx="260" cy="620" r="10" fill="none" stroke="#6b7280" stroke-width="1.8"/>
+      <path d="M260 614v7l4 3" stroke="#6b7280" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+      <text x="260" y="644" font-size="8.5" font-weight="500" fill="#6b7280">History</text>
+    </g>
+    <rect x="118" y="652" width="84" height="4" rx="2" fill="#1f2430" opacity="0.28"/>
+  </g>
+</svg>

@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minato Studio — travel apps for the trips people actually take</title>
+<meta name="description" content="Minato Studio builds small, focused travel apps: TabiLog for family travel money, TabiPace for multigenerational pacing, and TabiPlanner for dense trip planning. Offline-first, no lock-in, made in Sydney.">
+<meta name="theme-color" content="#fbfaf8">
+<link rel="icon" href="assets/img/minato-mark.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/poppins-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Minato Studio">
+<meta property="og:description" content="Small, focused travel apps. Offline-first, no lock-in, made in Sydney.">
+<script>
+/* Apply the saved theme before first paint, and flag that JS is available. */
+(function(){var d=document.documentElement;d.classList.add('js');try{var t=localStorage.getItem('minato-theme');if(t==='dark'||t==='light'){d.setAttribute('data-theme',t);var m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute('content',t==='dark'?'#08131c':'#fbfaf8');}}catch(e){}})();
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html" aria-label="Minato Studio — home">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+        <defs>
+          <linearGradient id="bm" x1="0" y1="0" x2="0.35" y2="1">
+            <stop offset="0" stop-color="#15859a"/><stop offset="1" stop-color="#0a2233"/>
+          </linearGradient>
+          <clipPath id="bc"><rect width="40" height="40" rx="11"/></clipPath>
+        </defs>
+        <g clip-path="url(#bc)">
+          <rect width="40" height="40" fill="url(#bm)"/>
+          <circle cx="20" cy="17.5" r="6.6" fill="#f0a03c"/>
+          <rect y="24" width="40" height="16" fill="#071a27" opacity="0.55"/>
+          <g stroke="#7fd6e4" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.85">
+            <path d="M6 28.5q3-1.6 6 0t6 0 6 0 6 0"/><path d="M9 33q3-1.6 6 0t6 0 6 0"/>
+          </g>
+          <g stroke="#f7f3ec" stroke-width="3" stroke-linecap="round" fill="none">
+            <path d="M4.5 11.5v8.5q0 4.5 4.5 4.5"/><path d="M35.5 11.5v8.5q0 4.5-4.5 4.5"/>
+          </g>
+        </g>
+      </svg>
+      <span class="brand-name"><b>Minato</b><span>Studio</span></span>
+    </a>
+
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="tabilog.html">TabiLog</a>
+      <a href="tabipace.html">TabiPace</a>
+      <a href="tabiplanner.html">TabiPlanner</a>
+      <a href="about.html">About</a>
+      <a href="updates.html">Updates</a>
+      <a href="support.html">Support</a>
+    </nav>
+
+    <div class="header-tools">
+      <button class="icon-btn theme-toggle" type="button" aria-label="Switch theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.2 5.2l1.4 1.4M17.4 17.4l1.4 1.4M18.8 5.2l-1.4 1.4M6.6 17.4l-1.4 1.4"/>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/>
+        </svg>
+      </button>
+      <button class="icon-btn nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================================================== hero -->
+  <section class="hero hero-deep">
+    <svg class="hero-horizon" viewBox="0 0 1440 180" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 120q180-46 360-14t360 8 360-30 360 12v84H0z" fill="rgba(69,185,204,.14)"/>
+      <path d="M0 146q200-34 400-8t400 4 320-22 320 16v44H0z" fill="rgba(69,185,204,.1)"/>
+    </svg>
+
+    <div class="wrap">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Minato Studio · Sydney</span>
+          <h1>Travel apps for the trips people actually take.</h1>
+          <p class="lede">Not the frictionless holiday in the brochure — the one with three generations, four currencies, a toddler who naps at two, and no signal in the mountains.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="tabilog.html">
+              Meet TabiLog
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="about.html">About the studio</a>
+          </div>
+        </div>
+
+        <div class="hero-art">
+          <div class="phone-stack">
+            <div class="phone phone-back" aria-hidden="true">
+              <div class="phone-screen"><img src="assets/img/shots/app-budgets.webp" alt="" width="540" height="1113" loading="eager"></div>
+            </div>
+            <div class="phone">
+              <div class="phone-screen">
+                <img src="assets/img/shots/app-dashboard.webp" alt="The TabiLog dashboard, showing each traveller&apos;s budget against its monthly limit and a breakdown of spending by category." width="540" height="1113" loading="eager">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================== premise -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head center">
+        <span class="eyebrow">The premise</span>
+        <h2>One trip. Three problems worth solving properly.</h2>
+        <p>Most travel apps try to be the whole holiday and end up thin everywhere. Minato Studio does the opposite: three small apps, each doing one hard thing completely.</p>
+      </div>
+
+      <div class="grid grid-3">
+        <article class="card reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2.5" y="6" width="19" height="13" rx="3"/><path d="M2.5 10.5h19"/><circle cx="17" cy="15" r="1.4"/>
+            </svg>
+          </div>
+          <h3>Where did the money go?</h3>
+          <p>Four wallets, three currencies, and a pile of receipts nobody wants to sort at midnight. That's <strong>TabiLog</strong>.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="9"/><path d="M12 7v5.2l3.4 2"/>
+            </svg>
+          </div>
+          <h3>Can everyone survive this day?</h3>
+          <p>A day that suits a 38-year-old can quietly break a 3-year-old and a 78-year-old. That's <strong>TabiPace</strong>.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="4.5" width="18" height="16" rx="3"/><path d="M3 9.5h18M8 3v3M16 3v3M8 14h3M8 17.5h6"/>
+            </svg>
+          </div>
+          <h3>What are we doing on day nine?</h3>
+          <p>The whole trip on one screen, dense enough to replace the spreadsheet. That's <strong>TabiPlanner</strong>.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================== the apps -->
+  <section class="section section-sunk" id="apps">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">The apps</span>
+        <h2>Three tools, one journey</h2>
+        <p>Each one stands alone. You never need the other two.</p>
+      </div>
+
+      <div class="grid grid-3">
+
+        <article class="card card-hover product-card tone-tabilog reveal">
+          <div class="product-head">
+            <span class="product-logo" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2.5" y="6" width="19" height="13" rx="3"/><path d="M2.5 10.5h19"/><circle cx="17" cy="15" r="1.4"/>
+              </svg>
+            </span>
+            <div class="product-titles">
+              <h3>TabiLog</h3>
+              <span class="tag">Travel money, per person</span>
+            </div>
+          </div>
+          <span class="pill pill-live">In use</span>
+          <p>Separate budgets for each traveller, each in its own currency. Snap a receipt now and file it later. Split one shop receipt across four kids in a single step.</p>
+          <a class="product-link stretch" href="tabilog.html">
+            What TabiLog does
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <article class="card card-hover product-card tone-tabipace reveal">
+          <div class="product-head">
+            <span class="product-logo" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="9"/><path d="M12 7v5.2l3.4 2"/>
+              </svg>
+            </span>
+            <div class="product-titles">
+              <h3>TabiPace</h3>
+              <span class="tag">Pacing for three generations</span>
+            </div>
+          </div>
+          <span class="pill pill-soon">Coming to Google Play</span>
+          <p>Tell it what each traveller can manage — walking, stairs, heat, when they need to rest. Sketch the day. It tells you who the day will break, and why, before you're standing at the bottom of a hill.</p>
+          <a class="product-link stretch" href="tabipace.html">
+            What TabiPace does
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <article class="card card-hover product-card tone-tabiplanner reveal">
+          <div class="product-head">
+            <span class="product-logo" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4.5" width="18" height="16" rx="3"/><path d="M3 9.5h18M8 3v3M16 3v3M8 14h3M8 17.5h6"/>
+              </svg>
+            </span>
+            <div class="product-titles">
+              <h3>TabiPlanner</h3>
+              <span class="tag">The trip, at a glance</span>
+            </div>
+          </div>
+          <span class="pill pill-soon">Beta</span>
+          <p>Built on one finding: people abandon trip apps and go back to spreadsheets because they can't see the whole trip at once. So this one shows the whole trip at once.</p>
+          <a class="product-link stretch" href="tabiplanner.html">
+            What TabiPlanner does
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================== principles -->
+  <section class="section section-deep">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <span class="eyebrow">How these are built</span>
+          <h2>Four rules, held on purpose</h2>
+          <p>Apps in this category rarely die of missing features. They die of data loss, sync bugs and slow decay. So the rules are about durability, not ambition.</p>
+        </div>
+
+        <ol class="principles">
+          <li class="reveal">
+            <h4>Offline is the default, not the upgrade</h4>
+            <p>These get used in rural Japan with no signal. Nothing important should wait for a network.</p>
+          </li>
+          <li class="reveal">
+            <h4>Your data leaves whenever you want</h4>
+            <p>CSV, Excel and PDF export from day one. No format you can't open somewhere else.</p>
+          </li>
+          <li class="reveal">
+            <h4>Collect as little as possible</h4>
+            <p>Your data is never sold or handed to a data broker. TabiPace goes furthest — no server, no account, nothing leaves the device. TabiLog&apos;s Android build carries ads, and the <a class="link" href="privacy.html">privacy page</a> says exactly what that means.</p>
+          </li>
+          <li class="reveal">
+            <h4>Finished beats feature-rich</h4>
+            <p>A small app that works every time is worth more than a large one that mostly does.</p>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================== name -->
+  <section class="section">
+    <div class="wrap wrap-narrow center">
+      <span class="eyebrow center-x" style="display:inline-flex;">The name</span>
+      <h2>港 · minato · harbour</h2>
+      <p class="lede">A harbour is where a journey starts, and the thing you're glad to see at the end of one. <em>Tabi</em> (旅) is the journey itself. That's the whole idea: quiet tools that get you out the door and safely back.</p>
+      <div class="btn-row center" style="margin-top:1.75rem;">
+        <a class="btn btn-ghost" href="about.html">More about the studio</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================== cta -->
+  <section class="section-sm">
+    <div class="wrap">
+      <div class="cta-band reveal">
+        <h2>Start with TabiLog</h2>
+        <p>The one that's finished and in daily use — separate budgets per traveller, receipts that can wait, and a PDF report at the end that actually explains where the money went.</p>
+        <div class="btn-row center" style="margin-top:1.5rem;">
+          <a class="btn btn-primary" href="tabilog.html">
+            See what it does
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="updates.html">Read the updates</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+            <defs>
+              <linearGradient id="fm" x1="0" y1="0" x2="0.35" y2="1"><stop offset="0" stop-color="#15859a"/><stop offset="1" stop-color="#0a2233"/></linearGradient>
+              <clipPath id="fc"><rect width="40" height="40" rx="11"/></clipPath>
+            </defs>
+            <g clip-path="url(#fc)">
+              <rect width="40" height="40" fill="url(#fm)"/>
+              <circle cx="20" cy="17.5" r="6.6" fill="#f0a03c"/>
+              <rect y="24" width="40" height="16" fill="#071a27" opacity="0.55"/>
+              <g stroke="#7fd6e4" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.85"><path d="M6 28.5q3-1.6 6 0t6 0 6 0 6 0"/><path d="M9 33q3-1.6 6 0t6 0 6 0"/></g>
+              <g stroke="#f7f3ec" stroke-width="3" stroke-linecap="round" fill="none"><path d="M4.5 11.5v8.5q0 4.5 4.5 4.5"/><path d="M35.5 11.5v8.5q0 4.5-4.5 4.5"/></g>
+            </g>
+          </svg>
+          <span class="brand-name"><b>Minato</b><span>Studio</span></span>
+        </a>
+        <p>Small, focused travel apps. Built in Sydney, Australia.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Apps</h4>
+        <ul>
+          <li><a href="tabilog.html">TabiLog</a></li>
+          <li><a href="tabipace.html">TabiPace</a></li>
+          <li><a href="tabiplanner.html">TabiPlanner</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Studio</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="updates.html">Updates</a></li>
+          <li><a href="support.html">Support</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span data-year>2026</span> Minato Studio. All rights reserved.</p>
+      <p class="footer-jp">港 — a harbour. Where journeys begin and end.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>
