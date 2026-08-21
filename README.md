@@ -1,7 +1,7 @@
-# Minato Studio — website
+# Minato Studio website
 
 The public site for Minato Studio: what the apps are, what they do, and what
-they deliberately don't do. It is an *informational* site — it doesn't sign
+they deliberately don't do. It is an *informational* site. It doesn't sign
 anyone up, sell anything, or hand out the apps.
 
 Plain static HTML, CSS and JavaScript. **No build step, no dependencies, no
@@ -13,7 +13,7 @@ package.json.** What's in this folder is what gets deployed.
 node tools/dev-server.js
 ```
 
-Then open <http://localhost:4180>. The server exists only for previewing —
+Then open <http://localhost:4180>. The server exists only for previewing:
 it serves `404.html` for unknown paths and maps extensionless URLs to `.html`
 so `/about` works the same as `/about.html`, matching what most static hosts do.
 
@@ -21,10 +21,10 @@ so `/about` works the same as `/about.html`, matching what most static hosts do.
 
 | Path | What it is |
 |---|---|
-| `index.html` | Studio home — the premise, the three apps, the principles |
+| `index.html` | Studio home: the premise, the three apps, the principles |
 | `tabilog.html` | TabiLog product page: features, screenshot gallery, FAQ |
-| `tabipace.html` | TabiPace — how it works, scope, current status |
-| `tabiplanner.html` | TabiPlanner — the research findings it's built on |
+| `tabipace.html` | TabiPace: how it works, scope, current status |
+| `tabiplanner.html` | TabiPlanner: the research findings it's built on |
 | `about.html` | The studio, its commitments, and the name |
 | `updates.html` | Running changelog across all three apps |
 | `support.html` | How to report a bug, export or delete data, get in touch |
@@ -34,7 +34,7 @@ so `/about` works the same as `/about.html`, matching what most static hosts do.
 | `assets/js/site.js` | Theme toggle, mobile nav, lightbox, scroll reveal |
 | `assets/fonts/` | Poppins, self-hosted (subset woff2, ~8KB each) |
 | `assets/img/shots/` | Imagery used on the site |
-| `assets/img/concepts/` | Superseded hand-drawn mock-ups — see below |
+| `assets/img/concepts/` | Superseded hand-drawn mock-ups, see below |
 | `tools/dev-server.js` | Local preview server. Never ships. |
 
 There is no template engine, so **the header and footer are duplicated in every
@@ -79,7 +79,7 @@ adb exec-out screencap -p > raw.png
 magick raw.png -crop 1080x2226+0+120 +repage -resize 540x -quality 82 name.webp
 ```
 
-Keep the 540×1113 aspect — the `.phone` frame in the CSS is built around it.
+Keep the 540×1113 aspect, the `.phone` frame in the CSS is built around it.
 Package names are `com.tabilog.app`, `com.tabipace.app`, `com.tabiplanner.app`;
 launch with `adb shell monkey -p <pkg> -c android.intent.category.LAUNCHER 1`.
 
@@ -97,13 +97,13 @@ gallery caption says so.
 
 `assets/img/concepts/` holds all eight original hand-drawn SVG mock-ups, made
 before any app had been seen running. They're kept deliberately as a design
-source to review later — nothing on the site references them. See
+source to review later, nothing on the site references them. See
 [`assets/img/concepts/README.md`](assets/img/concepts/README.md), which lists
 what each one depicts and exactly where it diverges from the real interface.
 
 ## Adding a changelog entry
 
-Entries live directly in `updates.html` — there's no data file or generator.
+Entries live directly in `updates.html`, there's no data file or generator.
 Copy one `<article class="entry">` block, put it at the top of `.timeline`, and
 change the date, badge and text. A comment in the file says the same thing.
 
@@ -118,12 +118,12 @@ Everything lives in `assets/css/site.css`, tokens first.
   has its own accent (`--tabilog`, `--tabipace`, `--tabiplanner`) used for card
   tones and changelog badges.
 - **Theming.** Light by default; dark via `prefers-color-scheme` *and* an
-  explicit `data-theme` toggle. The dark palette is declared twice on purpose —
-  once for system-dark visitors with no attribute set, once for the toggle — so
+  explicit `data-theme` toggle. The dark palette is declared twice on purpose,
+  once for system-dark visitors with no attribute set, once for the toggle, so
   both directions win. A tiny inline script in each `<head>` applies the stored
   choice before first paint, which is what stops the flash of the wrong theme.
 - **Text-on-tint tokens.** `--tabilog-ink` and friends exist because the accent
-  hues are too light for 11–12px bold badge text on their own tints. Use the
+  hues are too light for 11 to 12px bold badge text on their own tints. Use the
   `-ink` variant for small text, the plain one for accents and fills.
 - **Deep bands.** `.hero-deep`, `.section-deep` and `.cta-band` all paint the
   same dark gradient, so their descendant rules are grouped as
@@ -137,10 +137,10 @@ All text was checked against WCAG AA (4.5:1) across every page in both themes.
 
 ## Deploying
 
-Any static host works — upload the folder. No build, no environment variables,
+Any static host works, upload the folder. No build, no environment variables,
 no server-side anything.
 
 - Netlify / Cloudflare Pages / GitHub Pages: point at the repo root, no build
   command, publish directory `.`.
-- The site makes **zero external requests** — fonts, images, CSS and JS are all
-  same-origin — so it works behind a captive portal and leaks nothing to a CDN.
+- The site makes **zero external requests**: fonts, images, CSS and JS are all
+  same-origin, so it works behind a captive portal and leaks nothing to a CDN.

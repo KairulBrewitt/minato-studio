@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Minato Studio — site behaviour
+   Minato Studio, site behaviour
    No dependencies, no build step. Everything degrades gracefully without JS:
    the nav is a plain list, the gallery is plain figures, reveals are visible.
    The theme is applied by a tiny inline snippet in <head> (see any page) so

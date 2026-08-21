@@ -30,7 +30,7 @@
     <path d="M44 120v9" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round"/>
     <circle cx="44" cy="134" r="1.6" fill="#ffffff"/>
     <text class="t" x="68" y="123" font-size="12" font-weight="700" fill="#9c3b25">This day breaks two people</text>
-    <text class="t" x="68" y="139" font-size="9.5" font-weight="500" fill="#b04f34">Mei (3) and Halim (78) — before 2 pm</text>
+    <text class="t" x="68" y="139" font-size="9.5" font-weight="500" fill="#b04f34">Mei (3) and Halim (78), before 2 pm</text>
     <rect x="68" y="148" width="86" height="16" rx="8" fill="#d1553a" opacity="0.16"/>
     <text class="t" x="111" y="159" font-size="8.5" font-weight="700" fill="#9c3b25" text-anchor="middle">SEE WHY</text>
 

@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Minato Studio — site stylesheet
+   Minato Studio, site stylesheet
    Brand: 港 (minato) = harbour. Deep water, a warm horizon, journeys leaving.
    Fonts are self-hosted (assets/fonts/) so the site makes zero external
    requests and renders identically offline or behind a captive portal.
@@ -16,7 +16,7 @@
    -------------------------------------------------------------------------- */
 
 :root {
-  /* Surfaces — warm paper, so the navy reads as ink rather than chrome */
+  /* Surfaces, warm paper, so the navy reads as ink rather than chrome */
   --bg:          #fbfaf8;
   --bg-sunk:     #f3f1ec;
   --surface:     #ffffff;
@@ -27,7 +27,7 @@
   /* Ink */
   --ink:      #0d1b26;
   --ink-2:    #4c5c6a;
-  /* --ink-3 is used at 13–14px (captions, meta). Kept dark enough to clear
+  /* --ink-3 is used at 13 to 14px (captions, meta). Kept dark enough to clear
      4.5:1 against --bg-sunk, the lightest surface it ever sits on. */
   --ink-3:    #5f6e7b;
 
@@ -39,7 +39,7 @@
   --accent:       #cf6427;
   --accent-tint:  #fbeee4;
 
-  /* Deep harbour — used for inverted bands, constant across themes */
+  /* Deep harbour, used for inverted bands, constant across themes */
   --deep:      #0a1b28;
   --deep-2:    #10293b;
   --deep-ink:  #eaf1f5;
@@ -1115,7 +1115,7 @@ main { flex: 1; }
    -------------------------------------------------------------------------- */
 
 /* Reveals are opt-in: the `js` class is set by an inline snippet in <head>,
-   so without JS (or before it parses) content is simply visible — never a
+   so without JS (or before it parses) content is simply visible, never a
    flash of content appearing, then vanishing, then fading back in. */
 :root.js .reveal {
   opacity: 0;

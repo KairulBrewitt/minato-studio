@@ -1,5 +1,5 @@
 /* Static file server for local preview only. Never ships.
-   The site itself is plain files — any static host will serve it as-is.
+   The site itself is plain files, and any static host will serve it as-is.
    Usage: node tools/dev-server.js [port]        (default 4180) */
 
 const http = require('http');
