@@ -66,8 +66,8 @@
     <div class="wrap">
       <span class="eyebrow">Legal</span>
       <h1>Privacy</h1>
-      <p class="lede">The short version: this website collects nothing at all, and the apps collect only what they need to do their job. The one thing worth knowing up front is that the Android build of TabiLog shows ads, and that is set out in full below.</p>
-      <p class="doc-meta">Last updated 21 August 2026 · Minato Studio, Sydney, Australia</p>
+      <p class="lede">The short version: this website collects nothing at all, and the apps collect only what they need to do their job. The one thing worth knowing up front is that the Android builds of TabiLog and TabiPlanner show ads, and that is set out in full below.</p>
+      <p class="doc-meta">Last updated 25 August 2026 · Minato Studio, Sydney, Australia</p>
     </div>
   </section>
 
@@ -117,7 +117,8 @@
         <p>This is a structural property of the app rather than a setting you have to find. It also means the studio cannot recover your data if you lose the device, and there is no cloud backup to restore from. Sharing happens by exporting a PDF and sending it yourself.</p>
 
         <h2>TabiPlanner</h2>
-        <p>TabiPlanner collects nothing. There is no analytics, no crash reporting, no advertising identifier and no telemetry of any kind in the app. There is no account to create, no server behind it, and no way for the studio to see your trips.</p>
+        <p>TabiPlanner has no analytics, no crash reporting and no telemetry. There is no account to create, no server behind it, and no way for the studio to see your trips. Nothing you type into it is transmitted anywhere.</p>
+        <p>The free Android build does show banner advertisements, which use an advertising identifier. That is the one thing that leaves the device automatically, it is set out in full under <a href="#advertising">Advertising</a> below, and paying once to unlock the app removes it.</p>
 
         <h3>Where your trips are stored</h3>
         <p>Everything you type stays in the app's private storage on your phone, in two places: a local database and a mirror file. The second copy exists so that a crash or a force stop cannot lose your trip. Neither copy is readable by other apps, and neither is uploaded anywhere by TabiPlanner.</p>
@@ -134,26 +135,30 @@
         </ul>
 
         <h3>Internet permission</h3>
-        <p>The app declares Android's internet permission because of how its display layer is built, not because it contacts anything. TabiPlanner makes no network requests to the studio or to any third party. It is designed to work with no signal at all.</p>
+        <p>TabiPlanner makes <strong>no network requests to the studio</strong>, and never sends your trip anywhere. It is designed to work with no signal at all, and every feature except the ads keeps working offline.</p>
+        <p>The free build does contact Google's ad network to fetch a banner. That is the only automatic network request the app makes. With no signal it simply shows no ad, and nothing else changes.</p>
 
         <h3>Deleting everything</h3>
         <p>Uninstalling the app, or clearing its data in Android settings, removes everything. Export your trip first if you want to keep it, since there is no copy held anywhere else to restore from.</p>
 
-        <h2>Advertising in the TabiLog Android app</h2>
-        <p>The Android build of TabiLog displays banner advertisements, served by <strong>Google AdMob</strong>. This is worth stating plainly rather than burying:</p>
+        <h2 id="advertising">Advertising in the TabiLog and TabiPlanner Android apps</h2>
+        <p>The Android builds of TabiLog and TabiPlanner display banner advertisements, served by <strong>Google AdMob</strong>. This is worth stating plainly rather than burying:</p>
         <ul>
           <li>AdMob is a Google service. To serve and measure ads it may collect device-level information such as an advertising identifier, IP address, device model, operating system and coarse location. That collection is governed by
             <a href="https://policies.google.com/technologies/partner-sites" rel="noopener" target="_blank">Google's own policy</a>, not by this one.</li>
-          <li><strong>Nothing you enter into TabiLog is shared with the ad network.</strong> Your budgets, transactions, receipt photographs, categories and household details are never passed to AdMob or to any advertiser.</li>
+          <li><strong>Nothing you enter into either app is shared with the ad network.</strong> Your budgets, transactions, receipt photographs and household details in TabiLog, and your trips, bookings, locations, costs and notes in TabiPlanner, are never passed to AdMob or to any advertiser.</li>
+          <li><strong>Ad content is limited to a Teen rating or lower</strong> in both apps, because both are available to people aged 13 and over.</li>
+          <li><strong>Paying to unlock TabiPlanner removes its ads permanently.</strong> It is a single payment, not a subscription.</li>
           <li>You can reset or limit the advertising identifier in your device's own privacy settings, which applies to every app on the device rather than just this one.</li>
           <li>The <strong>web version of TabiLog carries no ads</strong>, and neither does this website.</li>
+          <li>Neither app shows ads on any screen while you are entering personal information.</li>
         </ul>
-        <p>Ads are what make it possible to give the app away. If that trade isn't one you want, the web version is the same app without them.</p>
+        <p>Ads are what make it possible to give these apps away. If that trade isn't one you want, the web version of TabiLog is the same app without them, and TabiPlanner's one-off unlock removes them for good.</p>
 
         <h2>What is never done, in any app</h2>
         <ul>
           <li>Your data is <strong>never sold</strong> or rented, and never shared with data brokers.</li>
-          <li>The contents of your household (budgets, transactions, receipts, health and mobility details) are <strong>never shared with advertisers</strong> or any third party, in any app.</li>
+          <li>The contents of your household (budgets, transactions, receipts, health and mobility details) and of your trips (bookings, locations, costs and notes) are <strong>never shared with advertisers</strong> or any third party, in any app.</li>
           <li>There is <strong>no analytics or session-recording product</strong> embedded in any app.</li>
           <li>Nothing is used to train anything, or shared with anyone for that purpose.</li>
         </ul>
