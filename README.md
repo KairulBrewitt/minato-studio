@@ -36,6 +36,8 @@ so `/about` works the same as `/about.html`, matching what most static hosts do.
 | `assets/img/shots/` | Imagery used on the site |
 | `assets/img/concepts/` | Superseded hand-drawn mock-ups, see below |
 | `tools/dev-server.js` | Local preview server. Never ships. |
+| `docs/launch-posts.md` | Drafts for launch posts. Notes, never deployed. |
+| `sitemap.xml`, `robots.txt` | For Search Console. See the note inside robots.txt. |
 
 There is no template engine, so **the header and footer are duplicated in every
 page**. That's the deliberate trade for having no build step: if you change a nav
