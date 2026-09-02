@@ -1,0 +1,9 @@
+# Minato Studio
+# NOTE: on a GitHub Pages *project* site this file lives at
+# /minato-studio/robots.txt, which crawlers ignore. Only a robots.txt at
+# the domain root is honoured. Submit the sitemap directly in Search
+# Console instead. This file becomes live if the site moves to a custom domain.
+User-agent: *
+Allow: /
+
+Sitemap: https://kairulbrewitt.github.io/minato-studio/sitemap.xml

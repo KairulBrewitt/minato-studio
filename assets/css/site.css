@@ -414,6 +414,18 @@ hr {
 :is(.section-deep,.hero-deep,.cta-band) .btn-ghost { color: var(--deep-ink); border-color: var(--deep-line); }
 :is(.section-deep,.hero-deep,.cta-band) .btn-ghost:hover { background: rgba(255,255,255,.09); border-color: rgba(255,255,255,.3); color: #fff; }
 
+/* Google Play link. Not the official badge artwork: a plain link in the site's
+   own language, so nothing external is fetched and no trademark is imitated.
+   Swap in Google's badge PNG here if the official mark is ever wanted. */
+.btn-play { background: var(--deep); color: #fff; box-shadow: var(--shadow); }
+.btn-play:hover { background: var(--deep-2); color: #fff; box-shadow: var(--shadow-lg); }
+.btn-play .btn-play-text { display: flex; flex-direction: column; align-items: flex-start; gap: .1rem; line-height: 1.15; }
+.btn-play .btn-play-text small { font-size: .68em; font-weight: 500; opacity: .8; letter-spacing: .03em; }
+:is(.section-deep,.hero-deep,.cta-band) .btn-play { background: #fff; color: var(--deep); }
+:is(.section-deep,.hero-deep,.cta-band) .btn-play:hover { background: var(--deep-ink-2); color: var(--deep); }
+/* Lift the badge above the card's stretched-link overlay (z-index 2). */
+.product-card .btn-play { position: relative; z-index: 3; align-self: flex-start; }
+
 .btn-row { display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; }
 .btn-row.center { justify-content: center; }
 

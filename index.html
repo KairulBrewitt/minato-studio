@@ -9,6 +9,7 @@
 <link rel="icon" href="assets/img/minato-mark.svg" type="image/svg+xml">
 <link rel="preload" href="assets/fonts/poppins-600.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="canonical" href="https://kairulbrewitt.github.io/minato-studio/">
 <link rel="stylesheet" href="assets/css/site.css">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Minato Studio">
@@ -16,6 +17,18 @@
 <script>
 /* Apply the saved theme before first paint, and flag that JS is available. */
 (function(){var d=document.documentElement;d.classList.add('js');try{var t=localStorage.getItem('minato-theme');if(t==='dark'||t==='light'){d.setAttribute('data-theme',t);var m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute('content',t==='dark'?'#08131c':'#fbfaf8');}}catch(e){}})();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://kairulbrewitt.github.io/minato-studio/#studio",
+  "name": "Minato Studio",
+  "url": "https://kairulbrewitt.github.io/minato-studio/",
+  "email": "minatostudio26@gmail.com",
+  "logo": "https://kairulbrewitt.github.io/minato-studio/assets/img/minato-mark.svg",
+  "description": "Minato Studio builds small, focused travel apps: TabiLog for family travel money, TabiPace for multigenerational pacing, and TabiPlanner for dense trip planning. Offline-first, no lock-in, made in Sydney."
+}
 </script>
 </head>
 <body>
@@ -182,6 +195,10 @@
           </div>
           <span class="pill pill-live">In use</span>
           <p>Separate budgets for each traveller, each in its own currency. Snap a receipt now and file it later. Split one shop receipt across four kids in a single step.</p>
+          <a class="btn btn-play" href="https://play.google.com/store/apps/details?id=com.tabilog.app">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 3.5v17a1 1 0 0 0 1.53.85l13.2-8.5a1 1 0 0 0 0-1.7L7.53 2.65A1 1 0 0 0 6 3.5Z"/></svg>
+            <span class="btn-play-text"><small>Get it on</small>Google Play</span>
+          </a>
           <a class="product-link stretch" href="tabilog.html">
             What TabiLog does
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
@@ -220,8 +237,12 @@
               <span class="tag">The trip, at a glance</span>
             </div>
           </div>
-          <span class="pill pill-soon">Beta</span>
+          <span class="pill pill-live">On Google Play</span>
           <p>Built on one finding: people abandon trip apps and go back to spreadsheets because they can't see the whole trip at once. So this one shows the whole trip at once.</p>
+          <a class="btn btn-play" href="https://play.google.com/store/apps/details?id=com.tabiplanner.app">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 3.5v17a1 1 0 0 0 1.53.85l13.2-8.5a1 1 0 0 0 0-1.7L7.53 2.65A1 1 0 0 0 6 3.5Z"/></svg>
+            <span class="btn-play-text"><small>Get it on</small>Google Play</span>
+          </a>
           <a class="product-link stretch" href="tabiplanner.html">
             What TabiPlanner does
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
@@ -283,7 +304,11 @@
         <h2>Start with TabiLog</h2>
         <p>The one that's finished and in daily use: separate budgets per traveller, receipts that can wait, and a PDF report at the end that actually explains where the money went.</p>
         <div class="btn-row center" style="margin-top:1.5rem;">
-          <a class="btn btn-primary" href="tabilog.html">
+          <a class="btn btn-play" href="https://play.google.com/store/apps/details?id=com.tabilog.app">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 3.5v17a1 1 0 0 0 1.53.85l13.2-8.5a1 1 0 0 0 0-1.7L7.53 2.65A1 1 0 0 0 6 3.5Z"/></svg>
+            <span class="btn-play-text"><small>Get it on</small>Google Play</span>
+          </a>
+          <a class="btn btn-ghost" href="tabilog.html">
             See what it does
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
           </a>
